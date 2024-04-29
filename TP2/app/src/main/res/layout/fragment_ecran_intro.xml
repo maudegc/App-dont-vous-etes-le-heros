@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundintro"
+    tools:context=".présentation.écran.Ecran_intro">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="330dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titreIntro">
+
+        <Button
+            android:id="@+id/boutonCommencer"
+            android:layout_width="306dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/option"
+            android:fontFamily="@font/schoolbell"
+            android:text="@string/commencer"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:backgroundTint="@android:color/transparent"
+            app:backgroundTintMode="screen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/confirmation"
+            android:layout_width="fill_parent"
+            android:layout_height="197dp"
+            android:background="@drawable/bgcaracteristique"
+            android:paddingLeft="20dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="gone">
+
+            <TextView
+                android:id="@+id/texteConfirmation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/schoolbell"
+                android:gravity="bottom|clip_horizontal|center|start"
+                android:text="@string/confirmation"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.058" />
+
+            <Button
+                android:id="@+id/oui"
+                android:layout_width="117dp"
+                android:layout_height="50dp"
+                android:background="@drawable/option"
+                android:fontFamily="@font/schoolbell"
+                android:text="@string/oui"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:backgroundTint="@android:color/transparent"
+                app:backgroundTintMode="screen"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/non"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/texteConfirmation"
+                tools:visibility="visible" />
+
+            <Button
+                android:id="@+id/non"
+                android:layout_width="117dp"
+                android:layout_height="50dp"
+                android:background="@drawable/option"
+                android:fontFamily="@font/schoolbell"
+                android:text="@string/non"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:backgroundTint="@android:color/transparent"
+                app:backgroundTintMode="screen"
+                app:layout_constraintBottom_toBottomOf="@+id/oui"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/oui"
+                tools:visibility="visible" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ConRec"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible">
+
+            <Button
+                android:id="@+id/continuer"
+                android:layout_width="260sp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/option"
+                android:fontFamily="@font/schoolbell"
+                android:text="@string/Continuer"
+                android:textColor="@color/black"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:backgroundTint="@android:color/transparent"
+                app:backgroundTintMode="screen"
+                app:layout_constraintBottom_toTopOf="@+id/recommencer"
+                app:layout_constraintEnd_toEndOf="@+id/recommencer"
+                app:layout_constraintStart_toStartOf="@+id/recommencer"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible" />
+
+            <Button
+                android:id="@+id/recommencer"
+                android:layout_width="260sp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/option"
+                android:fontFamily="@font/schoolbell"
+                android:text="@string/recommencer"
+                android:textColor="@color/black"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:backgroundTint="@android:color/transparent"
+                app:backgroundTintMode="screen"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/continuer"
+                tools:visibility="visible" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/titreIntro"
+        android:layout_width="367dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/schoolbell"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

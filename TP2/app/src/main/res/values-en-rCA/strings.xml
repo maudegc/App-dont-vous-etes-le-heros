@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Magical Balls</string>
+
+    <string name="jouer">Play</string>
+    <string name="rouler">Roll</string>
+    <string name="commencer">Start</string>
+    <string name="recommencer">Restart</string>
+    <string name="Continuer">Continuer</string>
+    <string name="confirmation">Are you sure?</string>
+    <string name="oui">Yes</string>
+    <string name="non">Nso</string>
+    <string name="endurance">Stamina</string>
+    <string name="force">Strenght</string>
+    <string name="agilite">Agility</string>
+    <string name="intelligence">Intelligence</string>
+
+    <string name="descriptionCombat1">"x roll : y</string>
+    <string name="descriptionCombat3">x attack</string>
+    <string name="descriptionCombat4">x loose y points</string>
+    <string name="combatGagnant">You win !</string>
+    <string name="combatPerdant">You loose :(</string>
+    <string name="combatFin">"Click on roll to continue"</string>
+
+    <string name="descriptionApp">
+        This is a story about a little sad guy. One day, he called upon a big dragon,
+        wishing he could grant him his wish: to finally be happy.
+        To do so, he will have to gather all 3 sacred crystals: the crystal of health, the crystal of wealth and the crystal of love.
+        He will have to get through difficult tests to get there.
+    </string>
+    <string name="description1">
+        The crystal of wealth is guarded by the troll of the donjon.
+        It would be wise to go get the donjon\'s map to not get lost in these multiple corridors.
+    </string>
+    <string name="description2">
+        You will find te map in the small village\'s market.
+        To fnd the donjon\'s monster, you will need to make your way through intersections
+        respecting the following sequence: Right, Left, Left, Right
+        Are you ready to defeat the donjon\'s troll?
+    </string>
+    <string name="description4">
+        In this forest, you will come face to face with the forest\'s troll.
+        You have now the opportunity to get the crystal of love, although,
+        you are second guessing your ability to win the fight.
+    </string>
+    <string name="description6">
+        The lake\'s troll is the one who has the crystal of health.
+        You will need to face him on his own territory. Without this gems you can say goodbye
+        a happy life.
+        Are you ready to face the lake\'s troll?
+    </string>
+    <string name="description8">
+        Congratulalions. The balls never existed. It was a scam.
+        You can not find happiness. It is already in you.
+        You only need to be able to recognize it.
+    </string>
+    <string name="descriptionMort">
+        You are dead. Failing to find the 3 magical balls,
+        left you in a state of despair, loneliness and poverty
+        I few days later yo died from an unknown sickness.
+    </string>
+
+    <string name="seBattre">Fight</string>
+    <string name="fuir">Flee</string>
+    <string name="carte">Map</string>
+    <string name="mourir">Die</string>
+    <string name="rejouer">Replay</string>
+    <string name="quitter">Quit</string>
+    <string name="commencerCombat">Click on roll to start the battle</string>
+    <string name="erreurNom">"!!! You must have a name to create your character !!!"</string>
+    <string name="erreurStat">"!!! You must generate your statistics create your character !!!"</string>
+    <string name="erreurStat2">"You've reached the maximum amount of generation possible"</string>
+    <string name="monPerso">My character</string>
+    <string name="générer">Generate stat</string>
+    <string name="créer">Create character</string>
+    <string name="choisir">Choose an Adventure</string>
+    <string name="scroll">Scroll to see more</string>
+    <string name="erreurConnexion">You are not connected. Connect yourself to get new aventures</string>
+</resources>

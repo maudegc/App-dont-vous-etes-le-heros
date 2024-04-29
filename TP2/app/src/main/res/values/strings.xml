@@ -1,0 +1,80 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Balles Magiques</string>
+
+    <string name="jouer">Jouer</string>
+    <string name="rouler">Rouler</string>
+    <string name="commencer">Commencer</string>
+    <string name="recommencer">Recommencer</string>
+    <string name="Continuer">Continuer</string>
+    <string name="confirmation">Etes-vous sur de vouloir recommencer</string>
+    <string name="oui">Oui</string>
+    <string name="non">Non</string>
+    <string name="endurance">Endurance</string>
+    <string name="force">Force</string>
+    <string name="agilite">Agilité</string>
+    <string name="intelligence">Intelligence</string>
+
+    <string name="descriptionCombat1">"x roule : y</string>
+    <string name="descriptionCombat3">x attaque</string>
+    <string name="descriptionCombat4">x perd y points d\'endurance</string>
+    <string name="combatGagnant">Vous avez gagné !</string>
+    <string name="combatPerdant">Vous avez perdu :(</string>
+    <string name="combatFin">"Cliquer sur rouler pour continuer"</string>
+
+    <string name="descriptionApp">
+        C\'est l\'histoire d\'un petit bonhome bien triste.
+        Un jour, le grand dragon lui apparut et lui proposa d\'ehxausser son voeu: être enfin heureux.
+        en échange des 3 cristaux sacrés: le cristal de la santé, la richesse et l\'amour.
+        Il devra passer à travers quelques épreuves pour y parvenir.
+    </string>
+    <string name="description1">
+        Le cristal de la richesse est protégé par le troll du donjon.
+        Il serait judicieux d\'aller chercher la carte du Donjon
+        pour ne pas se perdre dans ses multiples corridors.
+    </string>
+    <string name="description2">
+        Vous trouvez la carte dans le petit marché du village.
+        Pour trouver le monstre du donjon, il faut prendre les intersections
+        indiquées sur la carte
+
+        Êtes-vous prêt à affronter le troll du donjon?
+    </string>
+    <string name="description4">
+        Dans la forêt, Vous tombez nez à nez avec le troll de la forêt.
+        C\'est l\'opportunité d\'avoir le cristal de l\'amour.
+        Êtes-vous prêt à affronter le troll de la forêt?
+    </string>
+    <string name="description6">
+        Le troll du lac est en possesion du cristal de la santé.
+        Vous aurriez besoin de l\'affrontez sur son propre territoire.
+        Sans ce cristal vous pourriez dire au revoir a une vie heureuse.
+        Êtes-vous prêt à affronter le troll du Lac?
+    </string>
+    <string name="description8">
+        Félicitation! Les balles de cristal était une arnaque.
+        Vous ne pouvez pas chercher le bonheur. Elle se trouve déjà en vous.
+        Il faut simplement savoir la reconnaitre.
+    </string>
+    <string name="descriptionMort">
+        Vous êtes mort.Sans les cristaux, vous passez
+        le reste de votre vie seul, pauvre sans amour et vous mourrez quelques
+        jours plus tard d\'une maladie inconnue.
+    </string>
+    <string name="carte">Carte</string>
+    <string name="seBattre">Se battre</string>
+    <string name="fuir">Fuir</string>
+    <string name="mourir"> Mourir </string>
+    <string name="rejouer">Rejouer</string>
+    <string name="quitter">Quitter</string>
+    <string name="commencerCombat">Cliquer sur rouler pour commencer le combat</string>
+    <string name="erreurNom">"!!! Vous devez avoir un nom pour créer votre personnage !!!"</string>
+    <string name="erreurStat">"!!! Vous devez générer vos statistiques avant de créer votre personnage !!!"</string>
+    <string name="erreurStat2">"Vous ne pouvez plus generer les stats aleatoires"</string>
+    <string name="monPerso">Mon Personnage</string>
+    <string name="générer">Générer Stats</string>
+    <string name="créer">Créer Personnage</string>
+    <string name="choisir">Choisir une aventure</string>
+    <string name="scroll">Faire défiler vers le bas pour voir le reste</string>
+    <string name="erreurConnexion">Vous êtes présentement hors ligne.Connectez-vous pour télécharger de nouvelles aventures</string>
+
+</resources>

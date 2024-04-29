@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bgCombat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgchap1land"
+    tools:context=".présentation.écran.Ecran_combat">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="169dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bgcaracteristique"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/frameLayout10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/frameLayout4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/nom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/statnum"
+                android:fontFamily="@font/schoolbell"
+                android:gravity="center"
+                android:paddingRight="20dp"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/frameLayout11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout10">
+
+            <TextView
+                android:id="@+id/statNumForce"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/statnum"
+                android:fontFamily="@font/schoolbell"
+                android:gravity="center_vertical|end"
+                android:paddingRight="18dp"
+                android:text="5"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/statNomForce"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/statname"
+                android:fontFamily="@font/schoolbell"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/force"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/frameLayout6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout4">
+
+            <TextView
+                android:id="@+id/statNumAgilité"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/statnum"
+                android:fontFamily="@font/schoolbell"
+                android:gravity="center_vertical|end"
+                android:paddingRight="18dp"
+                android:text="5"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/statNomAgilité"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/statname"
+                android:fontFamily="@font/schoolbell"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/agilite"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/frameLayout12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout11">
+
+            <TextView
+                android:id="@+id/statNumIntelligence"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:background="@drawable/statnum"
+                android:fontFamily="@font/schoolbell"
+                android:gravity="center_vertical|end"
+                android:paddingRight="18dp"
+                android:text="5"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/statNomIntelligence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/statname"
+                android:fontFamily="@font/schoolbell"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/intelligence"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout12"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout6">
+
+            <TextView
+                android:id="@+id/statNumEndurance"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/statnum"
+                android:fontFamily="@font/schoolbell"
+                android:gravity="center_vertical|end"
+                android:paddingRight="18dp"
+                android:text="5"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/statNomEndurance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/statname"
+                android:fontFamily="@font/schoolbell"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/endurance"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/btnRouler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+
+        android:src="@drawable/de"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/attaqueBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="252dp"
+        android:layout_marginRight="252dp"
+
+        android:src="@drawable/attaquebackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/enduranceBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="11dp"
+        android:src="@drawable/endurancebackground"
+        app:layout_constraintEnd_toEndOf="@+id/attaqueBackground"
+        app:layout_constraintStart_toStartOf="@+id/attaqueBackground"
+        app:layout_constraintTop_toBottomOf="@+id/attaqueBackground" />
+
+    <ImageView
+        android:id="@+id/enduranceBarre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/endurancebarre"
+        app:layout_constraintBottom_toBottomOf="@+id/enduranceBackground"
+        app:layout_constraintEnd_toEndOf="@+id/enduranceBackground"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/enduranceBackground"
+        app:layout_constraintTop_toTopOf="@+id/enduranceBackground" />
+
+    <TextView
+        android:id="@+id/texteCombat"
+        android:layout_width="239dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/attaqueBackground"
+        app:layout_constraintEnd_toEndOf="@+id/attaqueBackground"
+        app:layout_constraintStart_toStartOf="@+id/attaqueBackground"
+        app:layout_constraintTop_toTopOf="@+id/attaqueBackground" />
+
+    <TextView
+        android:id="@+id/nbrEnduranceEnnemi"
+        android:layout_width="26dp"
+        android:layout_height="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/enduranceBackground"
+        app:layout_constraintEnd_toEndOf="@+id/enduranceBackground"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toEndOf="@+id/enduranceBarre"
+        app:layout_constraintTop_toTopOf="@+id/enduranceBackground" />
+
+    <TextView
+        android:id="@+id/texteRouler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/schoolbell"
+        android:text="@string/rouler"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRouler"
+        app:layout_constraintEnd_toEndOf="@+id/btnRouler"
+        app:layout_constraintStart_toStartOf="@+id/btnRouler"
+        app:layout_constraintTop_toTopOf="@+id/btnRouler" />
+
+    <TextView
+        android:id="@+id/textEndurance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/schoolbell"
+        android:text="@string/endurance"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/enduranceBarre"
+        app:layout_constraintEnd_toEndOf="@+id/enduranceBarre"
+        app:layout_constraintStart_toStartOf="@+id/enduranceBackground"
+        app:layout_constraintTop_toTopOf="@+id/enduranceBarre" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".présentation.écran.Ecran_personnage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_personnage">
+
+        <TextView
+            android:id="@+id/personnageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/schoolbell"
+            android:text="@string/monPerso"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.499"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/nomPersonnage"
+            android:layout_width="445dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:fontFamily="@font/schoolbell"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toTopOf="@+id/backgroundCaractéristiques"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/personnageTextView"
+            app:layout_constraintVertical_bias="0.771" />
+
+        <ImageView
+            android:id="@+id/backgroundCaractéristiques"
+            android:layout_width="374dp"
+            android:layout_height="153dp"
+            android:src="@drawable/stats_personnage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/personnageTextView" />
+
+        <TextView
+            android:id="@+id/statIntelligence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/schoolbell"
+            android:text="@string/intelligence"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/nbrIntelligence"
+            app:layout_constraintHorizontal_bias="0.631"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/backgroundCaractéristiques" />
+
+        <TextView
+            android:id="@+id/statAgilité"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/schoolbell"
+            android:text="@string/agilite"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/nbrAgilité"
+            app:layout_constraintHorizontal_bias="0.563"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/statForce" />
+
+        <TextView
+            android:id="@+id/statEndurance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/schoolbell"
+            android:text="@string/endurance"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/nbrEndurance"
+            app:layout_constraintHorizontal_bias="0.621"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/statAgilité" />
+
+        <TextView
+            android:id="@+id/statForce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/schoolbell"
+            android:text="@string/force"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/nbrForce"
+            app:layout_constraintHorizontal_bias="0.556"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/statIntelligence" />
+
+        <TextView
+            android:id="@+id/nbrForce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="248dp"
+            android:layout_marginRight="248dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nbrIntelligence" />
+
+        <TextView
+            android:id="@+id/nbrIntelligence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="248dp"
+            android:layout_marginRight="248dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/backgroundCaractéristiques" />
+
+        <TextView
+            android:id="@+id/nbrAgilité"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="248dp"
+            android:layout_marginRight="248dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nbrForce" />
+
+        <TextView
+            android:id="@+id/nbrEndurance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="248dp"
+            android:layout_marginRight="248dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nbrAgilité" />
+
+        <ImageButton
+            android:id="@+id/boutonCréation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="176dp"
+            android:layout_marginRight="176dp"
+            android:layout_marginBottom="4dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/option"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/backgroundCaractéristiques"
+            app:layout_constraintVertical_bias="0.77" />
+
+        <ImageButton
+            android:id="@+id/boutonAléatoire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="176dp"
+            android:layout_marginLeft="176dp"
+            android:layout_marginBottom="4dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/option"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/backgroundCaractéristiques"
+            app:layout_constraintVertical_bias="0.774" />
+
+        <TextView
+            android:id="@+id/générerAléatoirementTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/schoolbell"
+            android:text="@string/générer"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/boutonAléatoire"
+            app:layout_constraintEnd_toEndOf="@+id/boutonAléatoire"
+            app:layout_constraintStart_toStartOf="@+id/boutonAléatoire"
+            app:layout_constraintTop_toTopOf="@+id/boutonAléatoire" />
+
+        <TextView
+            android:id="@+id/créationPersonnageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/schoolbell"
+            android:text="@string/créer"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/boutonCréation"
+            app:layout_constraintEnd_toEndOf="@+id/boutonCréation"
+            app:layout_constraintStart_toStartOf="@+id/boutonCréation"
+            app:layout_constraintTop_toTopOf="@+id/boutonCréation" />
+
+        <View
+            android:id="@+id/viewErreur"
+            android:layout_width="735dp"
+            android:layout_height="238dp"
+            android:background="#CD935D02"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewErreur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="26dp"
+            android:visibility="invisible"
+
+            app:layout_constraintBottom_toBottomOf="@+id/viewErreur"
+            app:layout_constraintEnd_toEndOf="@+id/viewErreur"
+            app:layout_constraintStart_toStartOf="@+id/viewErreur"
+            app:layout_constraintTop_toTopOf="@+id/viewErreur" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

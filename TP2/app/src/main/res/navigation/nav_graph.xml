@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ecran_accueil">
+
+    <fragment
+        android:id="@+id/ecran_accueil"
+        android:name="com.example.tp2.présentation.écran.Ecran_accueil"
+        android:label="fragment_ecran_accueil"
+        tools:layout="@layout/fragment_ecran_accueil" />
+    <fragment
+        android:id="@+id/ecran_combat"
+        android:name="com.example.tp2.présentation.écran.Ecran_combat"
+        android:label="fragment_ecran_combat"
+        tools:layout="@layout/fragment_ecran_combat" />
+    <fragment
+        android:id="@+id/ecran_chapitre"
+        android:name="com.example.tp2.présentation.écran.Ecran_chapitre"
+        android:label="fragment_ecran_chapitre"
+        tools:layout="@layout/fragment_ecran_chapitre" />
+    <fragment
+        android:id="@+id/ecran_intro"
+        android:name="com.example.tp2.présentation.écran.Ecran_intro"
+        android:label="fragment_ecran_intro"
+        tools:layout="@layout/fragment_ecran_intro" />
+    <fragment
+        android:id="@+id/ecran_personnage"
+        android:name="com.example.tp2.présentation.écran.Ecran_personnage"
+        android:label="fragment_ecran_personnage"
+        tools:layout="@layout/fragment_ecran_personnage" />
+    <fragment
+        android:id="@+id/ecran_choisir_aventure"
+        android:name="com.example.tp2.présentation.écran.Ecran_choisir_aventure"
+        android:label="fragment_ecran_choisir_aventure"
+        tools:layout="@layout/fragment_ecran_choisir_aventure" />
+</navigation>
